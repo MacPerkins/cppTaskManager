@@ -14,12 +14,12 @@ class Task {
 
 class ToDoList {
     public:
-        void addTask(const string& taskDesc) {
+        void addTask(const string& taskDesc) {  //Add a task
             tasks.push_back(Task(taskDesc));
             cout << "Task added" << endl;
         }
 
-        void removeTask(int index) {
+        void removeTask(int index) {    //Remove a task by index
             if (index >= 0 && index < tasks.size()) {
                 tasks.erase(tasks.begin() + index);
                 cout << "Task removed" << endl;
@@ -28,14 +28,14 @@ class ToDoList {
             }
         }
 
-        void viewTasks() const {
+        void viewTasks() const {    //Display all the tasks
             cout << "\nTasks: " << endl;
             for (size_t i = 0; i < tasks.size(); i++) {
                 cout << i + 1 << ". " << tasks[i].getDescription() << endl;
             }
         }
 
-        void writeToFile(const string& filename) {
+        void writeToFile(const string& filename) {  //Write the tasks to a file
             ofstream file(filename);
             if (file.is_open()) {
                 for (const Task& task : tasks) {
@@ -48,7 +48,7 @@ class ToDoList {
             }
         }
 
-        void readFromFile(const string& filename) {
+        void readFromFile(const string& filename) { //Read the tasks from a file
             ifstream file(filename);
             if (file.is_open()) {
                 string taskDesc;
