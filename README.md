@@ -6,10 +6,6 @@ The software consists of a class called tasks with accompanying modules that add
 
 My purpose in writing this was to showcase my learning of C++ for the past 2 weeks of study. I am trying to further my learning of a diverse amount of coding languages as part of building up good hard skills to use as a software developer in the future.
 
-# Video Demonstration
-
-[Software Demo Video](https://youtu.be/tU_kpkV-Grg)
-
 # Development Environment
 
 Programming language: C++.
